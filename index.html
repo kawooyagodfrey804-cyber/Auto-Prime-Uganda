@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoPrime - Premium Mobility</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-page">
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="logo">Auto<span>Prime</span></div>
+    <nav class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Top Announcement Ticker Bar -->
+  <div class="top-announcement">
+    <div class="ticker-track">
+      <span>🔥 Special Discounts Available on Commercial Fleets</span>
+      <span>•</span>
+      <span>⚡ New Electric & Hybrid Models Just Arrived</span>
+      <span>•</span>
+      <span>🛡️ 100% Certified Multi-Point Inspection on All Vehicles</span>
+      <span>•</span>
+      <span>📍 Showroom Open Daily 8:00 AM – 6:00 PM</span>
+    </div>
+  </div>
+
+  <!-- Unique Homepage Hero Section -->
+  <section class="hero-home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="badge">Next-Gen Automotive Experience</span>
+      <h1>Drive The Future.<br/><span class="highlight">Uncompromised Quality.</span></h1>
+      <p>Browse, filter, and inspect our hand-picked collection of executive sedans, rugged off-roaders, and commercial workhorses.</p>
+
+      <!-- Glassmorphic Search Bar -->
+      <div class="hero-search-box">
+        <input type="text" id="homeSearchInput" placeholder="Search make, model, or body style..." />
+        <select id="homeCategoryFilter">
+          <option value="all">All Body Types</option>
+          <option value="SUV">SUVs & 4x4s</option>
+          <option value="Sedan">Sedans</option>
+          <option value="Electric">Electric</option>
+          <option value="Van">Commercial & Vans</option>
+        </select>
+        <button type="button" id="homeSearchBtn" class="btn-primary">Find Vehicles</button>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="hero-stats">
+        <div class="stat"><span class="number">150+</span><span class="label">Vehicles in Stock</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="number">100%</span><span class="label">Verified History</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="number">24/7</span><span class="label">Customer Support</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Vehicles Grid -->
+  <main class="container">
+    <div class="section-title">
+      <h2>Featured Vehicles</h2>
+      <a href="inventory.html" class="view-all">View Full Inventory →</a>
+    </div>
+
+    <section id="carBoard" class="car-grid">
+      <!-- Dynamically populated via JS -->
+    </section>
+  </main>
+
+  <!-- Bottom Infinite Marquee Footer -->
+  <footer class="marquee-footer">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>📍 Main Showroom Location</span>
+        <span class="dot">•</span>
+        <span>⚙️ Genuine Spare Parts Support</span>
+        <span class="dot">•</span>
+        <span>⛽ Fuel Efficiency Guarantee</span>
+        <span class="dot">•</span>
+        <span>🛠️ 120-Point Technical Inspection</span>
+        <span class="dot">•</span>
+        <span>🚗 Trade-Ins & Financing Options</span>
+        <span class="dot">•</span>
+      </div>
+      <!-- Duplicate content to ensure seamless loop -->
+      <div class="marquee-content" aria-hidden="true">
+        <span>📍 Main Showroom Location</span>
+        <span class="dot">•</span>
+        <span>⚙️ Genuine Spare Parts Support</span>
+        <span class="dot">•</span>
+        <span>⛽ Fuel Efficiency Guarantee</span>
+        <span class="dot">•</span>
+        <span>🛠️ 120-Point Technical Inspection</span>
+        <span class="dot">•</span>
+        <span>🚗 Trade-Ins & Financing Options</span>
+        <span class="dot">•</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
