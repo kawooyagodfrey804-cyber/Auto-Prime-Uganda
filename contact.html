@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoPrime - Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="logo">Auto<span>Prime</span></div>
+    <nav>
+      <a href="inventory.html">Inventory</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Content -->
+  <main class="container">
+    <section class="hero">
+      <h1>Contact AutoPrime Dealership</h1>
+      <p>Get in touch with our sales team or visit our office today.</p>
+    </section>
+
+    <div class="contact-form">
+  <h2>Send Us a Direct Message</h2>
+  <p style="margin-bottom: 1.5rem; color: #555;">Click below to send an SMS or WhatsApp directly to our phone:</p>
+
+  <!-- Direct SMS Button -->
+  <a href="sms:+256782939552?body=Hello%20AutoPrime,%20I%20am%20interested%20in%20a%20vehicle." 
+     class="btn-buy" 
+     style="display: block; text-align: center; text-decoration: none; margin-bottom: 1rem; background-color: #27ae60;">
+    💬 Send Direct SMS (0782939552)
+  </a>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/256705070233?text=Hello%20AutoPrime,%20I%20am%20interested%20in%20a%20vehicle." 
+   target="_blank" 
+   class="btn-buy" 
+   style="display: block; text-align: center; text-decoration: none; background-color: #128C7E; color: white; padding: 12px 20px; border-radius: 5px;">
+  📲 Chat on WhatsApp (0705070233)
+</a>
+</div>
+
+<!-- Formspree Contact Form -->
+<form class="contact-form" action="https://formspree.io/f/mwlkajaw" method="POST">
+  <h2>Send Us a Message</h2>
+  
+  <label for="name">Your Name</label>
+  <input type="text" name="name" id="name" placeholder="Enter full name" required />
+
+  <label for="phone">Your Phone Number</label>
+  <input type="tel" name="phone" id="phone" placeholder="Enter phone number" required />
+
+  <label for="message">Message</label>
+  <textarea name="message" id="message" rows="4" placeholder="How can we help you?" required></textarea>
+
+  <button type="submit" class="btn-buy">Send Message</button>
+</form>
+    </div>
+  </main>
+
+</body>
+</html>

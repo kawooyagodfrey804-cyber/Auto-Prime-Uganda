@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoPrime - Inventory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="logo">Auto<span>Prime</span></div>
+    <nav>
+      <a href="inventory.html" class="active">Inventory</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="hero">
+      <h1>Vehicle Inventory</h1>
+      <p>Browse, filter, and search our available collection of quality cars.</p>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <section class="controls">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search by make or model..." />
+        <button type="button" id="searchBtn">Search</button>
+      </div>
+
+      <select id="categoryFilter">
+        <option value="all">All Types</option>
+        <option value="SUV">SUVs</option>
+        <option value="Sedan">Sedans</option>
+        <option value="Electric">Electric</option>
+        <option value="Sports">Sports</option>
+      </select>
+    </section>
+
+    <!-- Car Grid Display -->
+    <section id="carBoard" class="car-grid">
+      <!-- Cards with pictures dynamically load here via script.js -->
+    </section>
+
+    <!-- Operational Inventory Table Summary -->
+    <section class="table-section">
+      <div class="table-header-flex">
+        <h2>Inventory Table Summary</h2>
+        <div id="totalMetrics" class="metrics-badge">Total Value: $0</div>
+      </div>
+      
+      <table id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Preview</th>
+            <th class="sortable" onclick="sortTable('title')">Model <span id="sort-title">↕</span></th>
+            <th class="sortable" onclick="sortTable('type')">Type <span id="sort-type">↕</span></th>
+            <th class="sortable" onclick="sortTable('price')">Price <span id="sort-price">↕</span></th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Dynamically populated -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
